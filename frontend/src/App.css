@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Feature icon styling for homepage */
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Change primary color to match Orange brand */
+:root {
+  --bs-primary: #f26924;
+  --bs-primary-rgb: 242, 105, 36;
+}
+
+.text-primary {
+  color: #f26924 !important;
+}
+
+.bg-primary {
+  background-color: #f26924 !important;
+}
+
+.btn-primary {
+  background-color: #f26924;
+  border-color: #f26924;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #e05a16;
+  border-color: #e05a16;
+}
+
+/* Add some padding to account for fixed header */
+main {
+  padding-top: 2rem;
+}

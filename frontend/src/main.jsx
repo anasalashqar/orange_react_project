@@ -1,11 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import './assets/styles/main.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// Remove this import since we'll use CDN instead
+// import 'bootstrap-icons/font/bootstrap-icons.css';
+// Import your main CSS file if you have one
+// import './assets/styles/main.css';
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root'));
+
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );

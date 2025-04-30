@@ -1,12 +1,13 @@
 import React from 'react';
 import LoginForm from '../components/auth/LoginForm';
+import { Container } from 'react-bootstrap';
 
 const LoginPage = () => {
     return (
-        <div className="login-page">
-            <h1>Login</h1>
+        <Container className="py-4">
+            <h1 className="text-center mb-4">Login</h1>
             <LoginForm />
-        </div>
+        </Container>
     );
 };
 

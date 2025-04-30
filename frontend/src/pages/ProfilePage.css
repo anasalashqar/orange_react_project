@@ -1,0 +1,39 @@
+.profile-sidebar {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.user-blogs-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.user-blog-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.blog-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .profile-sidebar {
+        margin-bottom: 30px;
+    }
+    
+    .blog-actions {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
